@@ -28,5 +28,5 @@ data/processed/*
 !data/processed/.gitkeep
 *.parquet
 *.csv
-models/
+/models/
 mlruns/
