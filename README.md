@@ -6,6 +6,9 @@ The pipeline turns raw clickstream events into implicit user–item interactions
 evaluates ranking metrics, and starts with a popularity baseline before more
 advanced models (matrix factorization / neural CF) are added.
 
+For a detailed walkthrough of the design, baseline scores, next steps, and
+where TensorFlow fits, see [docs/DESIGN_AND_ROADMAP.md](docs/DESIGN_AND_ROADMAP.md).
+
 ## Dataset
 This project uses the RetailRocket dataset from Kaggle:
 https://www.kaggle.com/datasets/retailrocket/ecommerce-dataset
@@ -24,6 +27,8 @@ Event types: `view`, `addtocart`, `transaction`.
 ├── data/
 │   ├── processed/          # train/test parquet, maps, stats.json
 │   └── raw/                # events.csv (not committed)
+├── docs/
+│   └── DESIGN_AND_ROADMAP.md
 ├── notebooks/
 ├── results/                # baseline.json and future experiment outputs
 ├── scripts/
